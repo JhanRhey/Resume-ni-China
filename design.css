@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #FBD9cd;
+    scroll-behavior: smooth;
+    cursor: default;
+}
+
+.head-container {
+    text-align: center;
+    background-color: hsl(104, 14%, 84%);
+}
+.name , .profession , .contact {
+    background-color: transparent;
+    font-family: cursive;
+}
+.name {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #4a4a4a;
+}
+.profession {
+    font-size: 1rem;
+    color: #6a6a6a;
+}
+.picture {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-top: 20px;
+    border: 5px solid #fceaca;
+    box-shadow: 0 5px 8px #f7b59e;
+}
+.picture:hover {
+    animation: pulse 1s infinite;
+    cursor: pointer;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(255, 105, 180, 0.7);
+    }
+    70% {
+        transform: scale(1.05);
+        box-shadow: 0 0 0 10px rgba(255, 105, 180, 0);
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(255, 105, 180, 0);
+    }
+}
+.head-container {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 30px;
+    padding-bottom: 10px;
+
+    margin-left: 5rem;
+    margin-right: 5rem;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+
+    border-radius: 20%;
+    border: 10px solid #fceaca;
+    box-shadow: 0 5px 8px #ee9c7f;
+}
+
+.navigator-bar {
+    position: relative;
+    top: 20px;
+    background-color: #fceaca;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 5px 8px #ee9c7f;
+    width: 80%;
+    height: auto;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+ul , li {
+    list-style: none;
+    font-family: cursive;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 25px;
+    color: black;
+    font-style: none;
+}
+a {
+    text-decoration: none;
+    color: black;
+    font-family: cursive;
+}
+
+li:hover, a:hover {
+    background-color: #f7b59e;
+    color: #fff;
+    border-radius: 10px;
+    transition: 0.3s;
+    cursor: pointer;
+    animation: pulse 1s infinite;
+}
+
+.objectives-container,
+.education-container,
+.skills-container,
+.achievements-container,
+.extracurricular-container,
+.head-container {
+    margin: 20px 20px 20px 20px; /* Increased top margin to avoid nav bar overlap */
+    padding: 20px;
+    background-color: #fceaca;
+    border-radius: 10px;
+    box-shadow: 0 5px 8px #ee9c7f;
+}
+
+h2 {
+    font-family: cursive;
+    text-align: center;
+    margin-bottom: 10px;
+    background-color: transparent;
+    width: 100%;
+    border-radius: 10px;
+    border: 5px solid #ee9c7f;
+}
+
+h2:hover {
+    animation: pulse 1s infinite;
+    background-color: #f7b59e;
+    cursor: pointer;
+}
+.text {
+    font-family: cursive;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: justify;
+}
+.head-container:hover,
+.navigator-bar:hover,
+.objectives-container:hover,
+.education-container:hover,
+.skills-container:hover,
+.achievements-container:hover,
+.extracurricular-container:hover {
+    scale: 1.05;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Make navigator-bar float */
